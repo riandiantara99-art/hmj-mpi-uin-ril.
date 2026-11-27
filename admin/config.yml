@@ -1,0 +1,42 @@
+
+backend:
+  name: github
+  repo: riandiantara99-art/hmj-mpi-uin-ril
+  branch: main
+
+media_folder: "uploads/berita"
+public_folder: "/uploads/berita"
+
+locale: "id"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "berita"
+    label: "Berita HMJ MPI"
+    folder: "content/berita"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - label: "Judul Berita"
+        name: "title"
+        widget: "string"
+
+      - label: "Tanggal Publikasi"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Foto Utama"
+        name: "featured_image"
+        widget: "image"
+        required: false
+
+      - label: "Ringkasan Berita"
+        name: "description"
+        widget: "text"
+
+      - label: "Isi Berita"
+        name: "body"
+        widget: "markdown"
