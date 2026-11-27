@@ -2,10 +2,22 @@
 @media(max-width:900px){.nav{gap:13px}.nav a{font-size:9px}.site-header{padding:0 5%}.hero{padding-left:7%;padding-right:7%}.section{padding-left:7%;padding-right:7%}.intro-grid{gap:5%}}
 @media(max-width:680px){.announcement{font-size:8px}.site-header{height:70px}.menu-toggle{display:block;color:#165920}.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fafbf8;padding:20px 7%;flex-direction:column;align-items:stretch;gap:18px;border-bottom:1px solid #e9ece6}.nav.open{display:flex}.nav a{font-size:12px}.nav-cta{text-align:center}.hero{min-height:650px;padding-top:78px}.hero h1{letter-spacing:-3px}.hero-desc{font-size:12px}.hero-bottom{gap:22px;margin-top:85px}.hero-stat strong{font-size:19px}.hero-stat small{font-size:6px}.hero-note{font-size:9px}.hero-side-label{display:none}.intro-grid{grid-template-columns:1fr;gap:22px}.intro h2{font-size:43px}.values{grid-template-columns:1fr;margin-top:45px}.values article{padding:20px}.section{padding-top:75px;padding-bottom:75px}.section-heading,.news-head,.gallery-head{display:block}.section-heading>p,.gallery-head>p{margin-top:20px}.team-grid,.news-grid{grid-template-columns:1fr}.team-card{min-height:180px}.program-grid{grid-template-columns:1fr}.program-card{min-height:280px}.news-head .arrow-link{margin-top:20px}.news-head h2,.gallery-head h2{font-size:42px}.gallery-grid{grid-template-columns:1fr}.gallery-placeholder{height:190px}.contact{padding:70px 7%}.contact-stamp{display:none}.contact-actions{align-items:flex-start;flex-direction:column;gap:17px}.footer-bottom{gap:15px;flex-direction:column}.board-note{align-items:flex-start}}
 
-.brand-logo {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    display: block;
-    flex-shrink: 0;
-}
+
+/* Logo resmi dan struktur kepengurusan */
+.brand-logo{width:48px;height:48px;object-fit:contain;display:block;flex:0 0 auto}
+.leadership-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:34px 0 42px}
+.leader-card{background:#fff;color:#171a17;border-radius:4px;padding:22px 18px;min-height:112px}
+.leader-role{display:block;color:#165920;font-size:9px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;margin-bottom:13px}
+.leader-card h3{font-family:"Space Grotesk",sans-serif;font-size:17px;line-height:1.25;margin:0}
+.units-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.unit-card{background:#202a21;border:1px solid rgba(255,255,255,.13);padding:22px;border-radius:4px}
+.unit-head{border-bottom:1px solid rgba(255,255,255,.17);padding-bottom:14px;margin-bottom:8px}
+.unit-head span{color:#f06f1b;font-size:9px;font-weight:800;letter-spacing:1.2px}
+.unit-head h3{font-family:"Space Grotesk",sans-serif;color:#fff;font-size:21px;margin:8px 0 0}
+.unit-members{list-style:none;margin:0;padding:0}
+.unit-members li{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.09);display:flex;flex-direction:column;gap:4px}
+.unit-members li:last-child{border-bottom:0}
+.unit-members li span{color:#fff;font-size:13px;font-weight:700}
+.unit-members li small{color:#b8c4b8;font-size:10px;line-height:1.4}
+@media(max-width:900px){.leadership-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.brand-logo{width:42px;height:42px}.leadership-grid,.units-grid{grid-template-columns:1fr}.leader-card{min-height:auto}.unit-card{padding:18px}}
