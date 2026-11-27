@@ -3,6 +3,14 @@ backend:
   name: github
   repo: riandiantara99-art/hmj-mpi-uin-ril
   branch: main
+  open_authoring: true
+
+publish_mode: editorial_workflow
+
+backend:
+  name: github
+  repo: riandiantara99-art/hmj-mpi-uin-ril
+  branch: main
 
 media_folder: "uploads/berita"
 public_folder: "/uploads/berita"
