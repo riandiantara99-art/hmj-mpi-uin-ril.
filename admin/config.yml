@@ -1,50 +1,22 @@
 
 backend:
   name: github
-  repo: riandiantara99-art/hmj-mpi-uin-ril
+  repo: riandiantara99-art/hmj-mpi-uin-ril.
   branch: main
   open_authoring: true
+  base_url: https://rapid-haze-8670hmj-mpi-oauth.riandiantara99.workers.dev
+  auth_endpoint: /auth
 
-publish_mode: editorial_workflow
-
-backend:
-  name: github
-  repo: riandiantara99-art/hmj-mpi-uin-ril
-  branch: main
-
-media_folder: "uploads/berita"
-public_folder: "/uploads/berita"
-
-locale: "id"
-
-publish_mode: editorial_workflow
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "berita"
-    label: "Berita HMJ MPI"
+    label: "Berita"
     folder: "content/berita"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    extension: "md"
-    format: "frontmatter"
     fields:
-      - label: "Judul Berita"
-        name: "title"
-        widget: "string"
-
-      - label: "Tanggal Publikasi"
-        name: "date"
-        widget: "datetime"
-
-      - label: "Foto Utama"
-        name: "featured_image"
-        widget: "image"
-        required: false
-
-      - label: "Ringkasan Berita"
-        name: "description"
-        widget: "text"
-
-      - label: "Isi Berita"
-        name: "body"
-        widget: "markdown"
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime" }
+      - { label: "Isi", name: "body", widget: "markdown" }
